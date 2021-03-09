@@ -1,9 +1,9 @@
 import { Component, OnInit } from '@angular/core';
 import { Chart } from 'chart.js';
 
-import io from ' socket.io-client';
+import {Manager} from 'socket.io-client';
 
-const socket = io('http://localhost:3000');
+const socket = Manager('http://localhost:3000');
 
 @Component({
   selector: 'app-root',
